@@ -1,0 +1,114 @@
+:root {
+    font-size: 20px;
+    box-sizing: inherit;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  p:not(:last-child) {
+    margin-bottom: 1.5em;
+  }
+  
+  body {
+    font: 1em/1.618 Inter, sans-serif;
+    
+    color: #224;
+    background:
+      url(https://source.unsplash.com/E8Ufcyxz514/2400x1823)
+      center / cover no-repeat fixed;
+  }
+  
+
+
+  header{
+    width: 100%;
+    text-align: center;
+}
+
+
+.history{
+    text-align: center;
+}
+
+.love{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 25vw;
+    height: 40vh;
+    margin: 10px;
+}
+  
+
+.card {
+    max-width: 300px;
+    min-height: 200px;
+    margin: 0 auto;
+  
+    max-width: 500px;
+    height: 850px;
+    padding: 35px;
+  
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  
+    backdrop-filter: blur(15px);
+  }
+  
+  .card-footer {
+    font-size: 0.65em;
+    color: #446;
+  }
+
+  .gallery{
+    display: flex;
+  }
+
+  .gallery img{
+    height: 40vh;
+    width: 23vw;
+  }
+
+  .qq{
+    text-align: center;
+  }
+
+video{
+  width: 80vw;
+  margin-left: 8%;
+  height: 50vh;
+}
+
+@media(max-width:500px){
+    img{
+        width: 20vw;
+        height: 15vh;
+    }
+
+    .card{
+        height: 1000px;
+    }
+    
+    .gallery{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery img{
+        width: 80vw;
+        height: 40vh;
+    }
+}
